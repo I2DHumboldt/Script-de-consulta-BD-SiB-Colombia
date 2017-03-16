@@ -1,13 +1,6 @@
-# Trabajar sobre 
-setwd("C:/Users/juan.rey/Desktop")
-
-#Abrir base de datos actualizada cada martes 
-sib <- read.table("occurrence-search-1281-1489495590886.txt", sep = "\t", 
-                  header = T, fill = T, encoding="UTF-8")
-
-#Guardo base de datos sib en RDS
-saveRDS(sib, file = "SIB_14-03-17.rds")
-#Abro RSD SiB
+# Recuerde cambiar usuario, para mi caso es "juan.rey"
+setwd("C:/Users/juan.rey/Downloads")
+#Abro RSD SiB (decidi cargarlo tipo RDS por tiempo de carga y consultas
 sib<- readRDS("SIB_14-03-17.rds")
 #================================
 #Consultas
